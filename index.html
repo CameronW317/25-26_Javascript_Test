@@ -62,18 +62,19 @@
 					<hr>
 
 					<h3>Task 1 - The Image</h3>
-					<img onClick = "functionName()" src="assets/img/compIcon.png" id="imageTask1"><br />
-					<button style="display:none" id="buttonTask1">Click Me</button>
+					<img onMouseOver="showButton()" style="display:block" src="assets/img/compIcon.png" id="imageTask1"><br />
+					<button onClick = "hidePicture()" style="display:none" id="buttonTask1" >Click Me</button>
 					<hr>
 										
 					<h3>Task 2 - The Table</h3>
 					<!-- Buttons for this task should be entered before the table tag. -->
-					
-					
-					<table class="table table-striped">
+                    <button onClick="changeRed()" style="display:block" >Red</button>
+                    <button onClick="changeBlue()" style="display:block" >Blue</button>
+                    <button onClick="changeGreen()" style="display:block" >Green</button>
+					<table class="table table-striped" id="table" style="">
 						<thead>
 							<tr>
-								<th>#</th>
+								<th>O</th>
 								<th>First Name</th>
 								<th>Last Name</th>
 								<th>ID</th>
@@ -98,6 +99,7 @@
 								<td>Cable Guy</td>
 								<td>003</td>
 							</tr>
+
 						</tbody>
 					</table>
 					
